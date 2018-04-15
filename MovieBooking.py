@@ -38,6 +38,10 @@ def fetchseat(id):
     cursor= conn.execute(''' Select Seats From Movies where id is {} '''.format(id))
     return(cursor.fetchone()[0])
 
+def fetchmovie(id):
+    cursor= conn.execute(''' Select moviename From Movies where id is {} '''.format(id))
+    return(cursor.fetchone()[0])
+
 def book(id,seat):
     conn.execute('''Update Movies Set Seats ={} where id is {}; '''.format(fetchseat(id)-seat,id))
 
@@ -46,6 +50,7 @@ def refundseat(id,seat):
 
 def removemovie(id):
     conn.execute('''Delete From Movies Where id is {} '''.format(id))
+    
 if __name__== '__main__':
 
 
