@@ -82,7 +82,7 @@ def user_window():
         
     global id_show,book_mov_id,book_mov_seat,ref_mov_id,ref_mov_seat 
     b1=Button(window, text="Show All Movies", fg="red",command=showall)
-    b1.grid(row=0, column=0)
+    b1.grid(row=0, column=1)
     showmov=Label(window,text="Show Movie")
     showmov.grid(row=1)
     id_show=Entry(window)
@@ -105,6 +105,7 @@ def user_window():
     
     
 root=Tk() 
+l=Label(root,text="Welcome to Movie Booking").pack(side=TOP)
 topFrame = Frame(root)
 topFrame.pack()
 
