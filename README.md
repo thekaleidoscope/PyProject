@@ -21,9 +21,9 @@
 
 ![Image](https://image.ibb.co/jiszP7/PyP1.png)
 
-![Image](https://ibb.co/k7ueP7)
+![Image](https://image.ibb.co/fU7zP7/PyP2.png)
 
-![Image](https://ibb.co/iqPqWn)
+![Image](https://image.ibb.co/ftwhcS/PyP3.png)
 
 
 -----
