@@ -19,7 +19,7 @@
 
 ### Screenshots
 
-![Image](https://ibb.co/bWm4rn)
+![Image](https://image.ibb.co/jiszP7/PyP1.png)
 
 ![Image](https://ibb.co/k7ueP7)
 
