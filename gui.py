@@ -8,8 +8,6 @@ from tkinter import *
 #import tkinter as Tk 
 
 
-
-
 def admin_window():
     window = Toplevel(root)
     #l=Label(window,text="test")
@@ -71,7 +69,18 @@ def user_window():
     def showmovie():
         sid = id_show.get()
         print(sid)
-    global id_show 
+        
+    def bookmovie():
+        mid=book_mov_id.get()
+        seat=book_mov_seat.get()
+        print(mid,seat)
+        
+    def refundmovie():
+        mid=ref_mov_id.get()
+        seat=ref_mov_seat.get()
+        print(mid,seat)
+        
+    global id_show,book_mov_id,book_mov_seat,ref_mov_id,ref_mov_seat 
     b1=Button(window, text="Show All Movies", fg="red",command=showall)
     b1.grid(row=0, column=0)
     showmov=Label(window,text="Show Movie")
@@ -79,6 +88,20 @@ def user_window():
     id_show=Entry(window)
     id_show.grid(row=1,column=1)
     showbutton=Button(window,text="submit",command=showmovie).grid(row=1,column=2)
+    
+    bookl=Label(window,text="Book Movie").grid(row=2)
+    book_mov_id=Entry(window)
+    book_mov_id.grid(row=2,column=1)
+    book_mov_seat=Entry(window)
+    book_mov_seat.grid(row=2,column=2)
+    bookbutton=Button(window,text="book",command=bookmovie).grid(row=2,column=3)
+    
+    refl=Label(window,text="Refund Movie").grid(row=3)
+    ref_mov_id=Entry(window)
+    ref_mov_id.grid(row=3,column=1)
+    ref_mov_seat=Entry(window)
+    ref_mov_seat.grid(row=3,column=2)
+    refbutton=Button(window,text="refund",command=refundmovie).grid(row=3,column=3)
     
     
 root=Tk() 
