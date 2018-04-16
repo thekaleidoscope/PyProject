@@ -35,7 +35,7 @@
 * git clone https://github.com/thekaleidoscope/PyProject/
 * cd PyProject
 * **For Jupyter Notebook**
- * jupyter notebook
+  * jupyter notebook
 * **GUI version**
- * python3 gui.py
+  * python3 gui.py
  ---
